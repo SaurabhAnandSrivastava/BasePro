@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="AuthOptionTableCell" customModule="FurEternity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqg-8p-JL7" customClass="CustomViews" customModule="FurEternity" customModuleProvider="target">
+                        <rect key="frame" x="20" y="10" width="280" height="1"/>
+                        <color key="backgroundColor" systemColor="separatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Ea6-98-LtI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="RoundCorner" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or sign in with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZ9-9Q-vQl" customClass="CustomLbl" customModule="FurEternity" customModuleProvider="target">
+                        <rect key="frame" x="109.5" y="2" width="101" height="16"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="101" id="mXA-nO-aHu"/>
+                            <constraint firstAttribute="height" constant="16" id="vEp-A7-5uZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="AppFontNameBoldRegularMedium" value="L"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Lcl-pN-402">
+                        <rect key="frame" x="35" y="16" width="250" height="65"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zd4-hm-BYX">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tse-aZ-bg6" customClass="CustomBtn" customModule="FurEternity" customModuleProvider="target">
+                                        <rect key="frame" x="12.5" y="5" width="55" height="55"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="tse-aZ-bg6" secondAttribute="height" multiplier="1:1" id="GTS-wq-ve2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="FbBtn"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="RoundCorner" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.40000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="2" height="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="tse-aZ-bg6" secondAttribute="bottom" constant="5" id="6zO-C4-4lN"/>
+                                    <constraint firstItem="tse-aZ-bg6" firstAttribute="centerX" secondItem="Zd4-hm-BYX" secondAttribute="centerX" id="cPa-zN-TPh"/>
+                                    <constraint firstItem="tse-aZ-bg6" firstAttribute="centerY" secondItem="Zd4-hm-BYX" secondAttribute="centerY" id="fCa-jn-cD7"/>
+                                    <constraint firstItem="tse-aZ-bg6" firstAttribute="top" secondItem="Zd4-hm-BYX" secondAttribute="top" constant="5" id="iO9-Um-GFS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2QT-d7-gRi">
+                                <rect key="frame" x="85" y="0.0" width="80" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJP-qO-qpK" customClass="CustomBtn" customModule="FurEternity" customModuleProvider="target">
+                                        <rect key="frame" x="12.5" y="5" width="55" height="55"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="TJP-qO-qpK" secondAttribute="height" multiplier="1:1" id="oVg-8z-c6s"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="AppleBtn"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="RoundCorner" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.40000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="2" height="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="TJP-qO-qpK" firstAttribute="centerX" secondItem="2QT-d7-gRi" secondAttribute="centerX" id="7b1-tK-n3l"/>
+                                    <constraint firstItem="TJP-qO-qpK" firstAttribute="centerY" secondItem="2QT-d7-gRi" secondAttribute="centerY" id="JMy-ca-6rM"/>
+                                    <constraint firstAttribute="bottom" secondItem="TJP-qO-qpK" secondAttribute="bottom" constant="5" id="R4a-0y-kyn"/>
+                                    <constraint firstItem="TJP-qO-qpK" firstAttribute="top" secondItem="2QT-d7-gRi" secondAttribute="top" constant="5" id="nMr-mh-AdX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnG-C8-ZhV">
+                                <rect key="frame" x="170" y="0.0" width="80" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzv-8U-oac" customClass="CustomBtn" customModule="FurEternity" customModuleProvider="target">
+                                        <rect key="frame" x="12.5" y="5" width="55" height="55"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="yzv-8U-oac" secondAttribute="height" multiplier="1:1" id="rJt-c7-5l6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="GoogleBtn"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="RoundCorner" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.40000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="2" height="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="yzv-8U-oac" secondAttribute="bottom" constant="5" id="3PI-a6-O9M"/>
+                                    <constraint firstItem="yzv-8U-oac" firstAttribute="centerY" secondItem="MnG-C8-ZhV" secondAttribute="centerY" id="Xqp-JS-2h6"/>
+                                    <constraint firstItem="yzv-8U-oac" firstAttribute="centerX" secondItem="MnG-C8-ZhV" secondAttribute="centerX" id="l2p-Gk-iYu"/>
+                                    <constraint firstItem="yzv-8U-oac" firstAttribute="top" secondItem="MnG-C8-ZhV" secondAttribute="top" constant="5" id="xzE-bl-Cg4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="QAf-FJ-dBm"/>
+                            <constraint firstAttribute="height" constant="65" id="cHS-sX-k7c"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lcl-pN-402" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="7Gq-uH-sLv"/>
+                    <constraint firstItem="dqg-8p-JL7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ces-eg-fIE"/>
+                    <constraint firstItem="eZ9-9Q-vQl" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="DkB-Gi-ij8"/>
+                    <constraint firstItem="dqg-8p-JL7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="HZl-xz-ihr"/>
+                    <constraint firstAttribute="bottom" secondItem="Lcl-pN-402" secondAttribute="bottom" constant="10" id="N12-aj-eth"/>
+                    <constraint firstItem="eZ9-9Q-vQl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="OnF-P8-6oI"/>
+                    <constraint firstAttribute="trailing" secondItem="dqg-8p-JL7" secondAttribute="trailing" constant="20" id="dnL-hi-5Gh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="appleBtn" destination="TJP-qO-qpK" id="EaR-en-wPC"/>
+                <outlet property="fbBtn" destination="tse-aZ-bg6" id="dYM-MV-4gO"/>
+                <outlet property="googleBtn" destination="yzv-8U-oac" id="a8l-GX-fay"/>
+                <outlet property="titleText" destination="eZ9-9Q-vQl" id="6EC-Wd-TVv"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="97.433035714285708"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="TJP-qO-qpK">
+            <size key="intrinsicContentSize" width="49" height="43"/>
+        </designable>
+        <designable name="eZ9-9Q-vQl">
+            <size key="intrinsicContentSize" width="105.5" height="20.5"/>
+        </designable>
+        <designable name="tse-aZ-bg6">
+            <size key="intrinsicContentSize" width="37" height="41"/>
+        </designable>
+        <designable name="yzv-8U-oac">
+            <size key="intrinsicContentSize" width="53" height="43"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="AppleBtn" width="25" height="29"/>
+        <image name="FbBtn" width="13" height="27"/>
+        <image name="GoogleBtn" width="29" height="29"/>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

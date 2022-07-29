@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OtpTextView" customModule="FurEternity" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="iN0-l3-epB" id="rRU-rg-emN"/>
+                <outlet property="otp1" destination="NFj-SP-BeX" id="7Nh-iG-js7"/>
+                <outlet property="otp2" destination="n6Q-sV-35D" id="gpF-DH-YqG"/>
+                <outlet property="otp3" destination="3X1-FP-wEo" id="Cyt-HJ-aMd"/>
+                <outlet property="otp4" destination="74S-PQ-QOb" id="CAt-hx-tVh"/>
+                <outlet property="otp5" destination="iMw-Me-twi" id="5pI-2D-bWc"/>
+                <outlet property="otp6" destination="Ohb-9H-iKD" id="2L7-KG-vJ8"/>
+                <outlet property="underlineView1" destination="KDi-N3-zpz" id="dqH-ow-RIy"/>
+                <outlet property="underlineView2" destination="lhV-co-5qg" id="TEk-WY-fW8"/>
+                <outlet property="underlineView3" destination="7tO-TR-Q1E" id="Sq8-8V-Ox5"/>
+                <outlet property="underlineView4" destination="HBm-9n-VrK" id="QAT-o0-QlS"/>
+                <outlet property="underlineView5" destination="4bH-Pc-W2S" id="roT-JF-f6W"/>
+                <outlet property="underlineView6" destination="cPD-NZ-5Mw" id="M0S-Sw-koD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oay-lU-T7u">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZdP-3v-k6v">
+                            <rect key="frame" x="0.0" y="0.0" width="65" height="121"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NFj-SP-BeX" customClass="CustomTextField" customModule="FurEternity" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="65" height="116"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="AppFontNameBoldRegularMedium" value="B"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDi-N3-zpz">
+                                    <rect key="frame" x="5" y="115" width="55" height="1"/>
+                                    <color key="backgroundColor" systemColor="separatorColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Rs5-uD-6GC"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="NFj-SP-BeX" firstAttribute="top" secondItem="ZdP-3v-k6v" secondAttribute="top" id="DaH-C2-fBu"/>
+                                <constraint firstAttribute="bottom" secondItem="KDi-N3-zpz" secondAttribute="bottom" constant="5" id="K4R-34-INs"/>
+                                <constraint firstAttribute="trailing" secondItem="KDi-N3-zpz" secondAttribute="trailing" constant="5" id="LkS-ko-hYb"/>
+                                <constraint firstAttribute="bottom" secondItem="NFj-SP-BeX" secondAttribute="bottom" constant="5" id="NDs-H5-euU"/>
+                                <constraint firstItem="KDi-N3-zpz" firstAttribute="leading" secondItem="ZdP-3v-k6v" secondAttribute="leading" constant="5" id="YSf-UC-NSU"/>
+                                <constraint firstItem="NFj-SP-BeX" firstAttribute="leading" secondItem="ZdP-3v-k6v" secondAttribute="leading" id="bOD-Xm-4ZU"/>
+                                <constraint firstAttribute="trailing" secondItem="NFj-SP-BeX" secondAttribute="trailing" id="d20-Td-vR8"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOz-Bs-WbS">
+                            <rect key="frame" x="70" y="0.0" width="64.5" height="121"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n6Q-sV-35D" customClass="CustomTextField" customModule="FurEternity" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="64.5" height="116"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="AppFontNameBoldRegularMedium" value="B"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhV-co-5qg">
+                                    <rect key="frame" x="5" y="115" width="54.5" height="1"/>
+                                    <color key="backgroundColor" systemColor="separatorColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="2DN-os-Vox"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="lhV-co-5qg" firstAttribute="leading" secondItem="gOz-Bs-WbS" secondAttribute="leading" constant="5" id="1n8-tX-xh6"/>
+                                <constraint firstAttribute="bottom" secondItem="lhV-co-5qg" secondAttribute="bottom" constant="5" id="LjJ-6p-7IM"/>
+                                <constraint firstAttribute="bottom" secondItem="n6Q-sV-35D" secondAttribute="bottom" constant="5" id="b5g-JG-ZIq"/>
+                                <constraint firstItem="n6Q-sV-35D" firstAttribute="top" secondItem="gOz-Bs-WbS" secondAttribute="top" id="jpZ-Cr-XAD"/>
+                                <constraint firstItem="n6Q-sV-35D" firstAttribute="leading" secondItem="gOz-Bs-WbS" secondAttribute="leading" id="o3E-qS-xyo"/>
+                                <constraint firstAttribute="trailing" secondItem="n6Q-sV-35D" secondAttribute="trailing" id="oEb-mo-qIr"/>
+                                <constraint firstAttribute="trailing" secondItem="lhV-co-5qg" secondAttribute="trailing" constant="5" id="s9O-eH-aeY"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgt-PT-MD3">
+                            <rect key="frame" x="139.5" y="0.0" width="65" height="121"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3X1-FP-wEo" customClass="CustomTextField" customModule="FurEternity" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="65" height="116"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="AppFontNameBoldRegularMedium" value="B"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tO-TR-Q1E">
+                                    <rect key="frame" x="5" y="115" width="55" height="1"/>
+                                    <color key="backgroundColor" systemColor="separatorColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="xzB-j1-l1m"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="7tO-TR-Q1E" secondAttribute="bottom" constant="5" id="2df-XL-rqZ"/>
+                                <constraint firstItem="7tO-TR-Q1E" firstAttribute="leading" secondItem="qgt-PT-MD3" secondAttribute="leading" constant="5" id="Bjh-1v-cfD"/>
+                                <constraint firstAttribute="trailing" secondItem="7tO-TR-Q1E" secondAttribute="trailing" constant="5" id="TyN-Ib-dXI"/>
+                                <constraint firstAttribute="trailing" secondItem="3X1-FP-wEo" secondAttribute="trailing" id="cWb-R2-hRl"/>
+                                <constraint firstAttribute="bottom" secondItem="3X1-FP-wEo" secondAttribute="bottom" constant="5" id="kdt-vA-dHl"/>
+                                <constraint firstItem="3X1-FP-wEo" firstAttribute="top" secondItem="qgt-PT-MD3" secondAttribute="top" id="npg-NM-iTq"/>
+                                <constraint firstItem="3X1-FP-wEo" firstAttribute="leading" secondItem="qgt-PT-MD3" secondAttribute="leading" id="vwn-j8-IO6"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRQ-t1-Rfu">
+                            <rect key="frame" x="209.5" y="0.0" width="65" height="121"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="74S-PQ-QOb" customClass="CustomTextField" customModule="FurEternity" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="65" height="116"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="AppFontNameBoldRegularMedium" value="B"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBm-9n-VrK">
+                                    <rect key="frame" x="5" y="115" width="55" height="1"/>
+                                    <color key="backgroundColor" systemColor="separatorColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="lIM-75-DjW"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="HBm-9n-VrK" secondAttribute="trailing" constant="5" id="0zf-NH-CnA"/>
+                                <constraint firstAttribute="bottom" secondItem="74S-PQ-QOb" secondAttribute="bottom" constant="5" id="7jI-v4-WS5"/>
+                                <constraint firstItem="HBm-9n-VrK" firstAttribute="leading" secondItem="BRQ-t1-Rfu" secondAttribute="leading" constant="5" id="b30-V9-yvc"/>
+                                <constraint firstItem="74S-PQ-QOb" firstAttribute="leading" secondItem="BRQ-t1-Rfu" secondAttribute="leading" id="beq-Es-sxL"/>
+                                <constraint firstAttribute="trailing" secondItem="74S-PQ-QOb" secondAttribute="trailing" id="fGw-3t-leu"/>
+                                <constraint firstAttribute="bottom" secondItem="HBm-9n-VrK" secondAttribute="bottom" constant="5" id="n9f-eV-Jpf"/>
+                                <constraint firstItem="74S-PQ-QOb" firstAttribute="top" secondItem="BRQ-t1-Rfu" secondAttribute="top" id="niZ-oV-gi9"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cre-Ba-MDt">
+                            <rect key="frame" x="279.5" y="0.0" width="64.5" height="121"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iMw-Me-twi" customClass="CustomTextField" customModule="FurEternity" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="64.5" height="116"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="AppFontNameBoldRegularMedium" value="B"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bH-Pc-W2S">
+                                    <rect key="frame" x="5" y="115" width="54.5" height="1"/>
+                                    <color key="backgroundColor" systemColor="separatorColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="wgX-l2-Ryy"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="iMw-Me-twi" secondAttribute="bottom" constant="5" id="0c7-Cq-cwo"/>
+                                <constraint firstItem="iMw-Me-twi" firstAttribute="top" secondItem="cre-Ba-MDt" secondAttribute="top" id="BI2-4B-lu3"/>
+                                <constraint firstItem="iMw-Me-twi" firstAttribute="leading" secondItem="cre-Ba-MDt" secondAttribute="leading" id="J1O-eU-ueB"/>
+                                <constraint firstAttribute="bottom" secondItem="4bH-Pc-W2S" secondAttribute="bottom" constant="5" id="SOQ-gg-Cyn"/>
+                                <constraint firstAttribute="trailing" secondItem="4bH-Pc-W2S" secondAttribute="trailing" constant="5" id="cs9-YQ-3FY"/>
+                                <constraint firstAttribute="trailing" secondItem="iMw-Me-twi" secondAttribute="trailing" id="rRy-IR-qn2"/>
+                                <constraint firstItem="4bH-Pc-W2S" firstAttribute="leading" secondItem="cre-Ba-MDt" secondAttribute="leading" constant="5" id="rdF-AE-TN0"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZi-ZX-atZ">
+                            <rect key="frame" x="349" y="0.0" width="65" height="121"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ohb-9H-iKD" customClass="CustomTextField" customModule="FurEternity" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="65" height="116"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="AppFontNameBoldRegularMedium" value="B"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPD-NZ-5Mw">
+                                    <rect key="frame" x="5" y="115" width="55" height="1"/>
+                                    <color key="backgroundColor" systemColor="separatorColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Bd6-3J-TYn"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Ohb-9H-iKD" firstAttribute="leading" secondItem="GZi-ZX-atZ" secondAttribute="leading" id="0a8-Wf-8vz"/>
+                                <constraint firstItem="cPD-NZ-5Mw" firstAttribute="leading" secondItem="GZi-ZX-atZ" secondAttribute="leading" constant="5" id="7Wt-5L-EXq"/>
+                                <constraint firstAttribute="trailing" secondItem="Ohb-9H-iKD" secondAttribute="trailing" id="9pi-0b-cdw"/>
+                                <constraint firstAttribute="bottom" secondItem="Ohb-9H-iKD" secondAttribute="bottom" constant="5" id="C4q-zD-mcH"/>
+                                <constraint firstAttribute="bottom" secondItem="cPD-NZ-5Mw" secondAttribute="bottom" constant="5" id="LlM-Ih-fiM"/>
+                                <constraint firstItem="Ohb-9H-iKD" firstAttribute="top" secondItem="GZi-ZX-atZ" secondAttribute="top" id="gp9-h7-zJh"/>
+                                <constraint firstAttribute="trailing" secondItem="cPD-NZ-5Mw" secondAttribute="trailing" constant="5" id="yUe-ts-gHQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Oay-lU-T7u" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4l3-Ni-iLl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Oay-lU-T7u" secondAttribute="trailing" id="Cx0-ow-UnU"/>
+                <constraint firstItem="Oay-lU-T7u" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Uif-XX-Nu5"/>
+                <constraint firstItem="Oay-lU-T7u" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="l4V-NH-Y23"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-184.48660714285714"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="3X1-FP-wEo">
+            <size key="intrinsicContentSize" width="5" height="22"/>
+        </designable>
+        <designable name="74S-PQ-QOb">
+            <size key="intrinsicContentSize" width="5" height="22"/>
+        </designable>
+        <designable name="NFj-SP-BeX">
+            <size key="intrinsicContentSize" width="5" height="22"/>
+        </designable>
+        <designable name="Ohb-9H-iKD">
+            <size key="intrinsicContentSize" width="5" height="22"/>
+        </designable>
+        <designable name="iMw-Me-twi">
+            <size key="intrinsicContentSize" width="5" height="22"/>
+        </designable>
+        <designable name="n6Q-sV-35D">
+            <size key="intrinsicContentSize" width="5" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

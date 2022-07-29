@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopBarView" customModule="FurEternity" customModuleProvider="target">
+            <connections>
+                <outlet property="money" destination="lVX-nR-R3n" id="hCG-NT-kFg"/>
+                <outlet property="moneyIcon" destination="3fg-Ip-0aA" id="5za-aA-VsN"/>
+                <outlet property="profilePic" destination="1a1-jr-xdx" id="apv-I5-hhd"/>
+                <outlet property="token" destination="bOV-4e-56b" id="oDf-Zl-sUk"/>
+                <outlet property="tokenIcon" destination="J0f-av-PX3" id="caL-FR-4c3"/>
+                <outlet property="userName" destination="rXE-pq-z9G" id="kHF-Gx-trC"/>
+                <outlet property="walletBtn" destination="n2g-wy-qFB" id="932-WU-LRo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="1a1-jr-xdx" customClass="CustomUiimageView" customModule="FurEternity" customModuleProvider="target">
+                    <rect key="frame" x="5" y="59" width="32" height="32"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="2b7-1Z-dHL"/>
+                        <constraint firstAttribute="height" constant="32" id="oaw-HE-3td"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="RoundCorner" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ej-Ge-8c6">
+                    <rect key="frame" x="309" y="44" width="100" height="58"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Money" translatesAutoresizingMaskIntoConstraints="NO" id="3fg-Ip-0aA" customClass="CustomUiimageView" customModule="FurEternity" customModuleProvider="target">
+                            <rect key="frame" x="8" y="8" width="20" height="20"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="80C-fJ-MWk"/>
+                                <constraint firstAttribute="width" constant="20" id="IF6-p9-IZP"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="RoundCorner" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Token" translatesAutoresizingMaskIntoConstraints="NO" id="J0f-av-PX3" customClass="CustomUiimageView" customModule="FurEternity" customModuleProvider="target">
+                            <rect key="frame" x="8" y="33" width="20" height="20"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="0Px-El-mt7"/>
+                                <constraint firstAttribute="height" constant="20" id="feI-h2-WSq"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="RoundCorner" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lVX-nR-R3n" customClass="CustomLbl" customModule="FurEternity" customModuleProvider="target">
+                            <rect key="frame" x="36" y="8" width="64" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="AppFontNameBoldRegularMedium" value="L"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5k" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bOV-4e-56b" customClass="CustomLbl" customModule="FurEternity" customModuleProvider="target">
+                            <rect key="frame" x="36" y="33" width="64" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="AppFontNameBoldRegularMedium" value="L"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2g-wy-qFB">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="58"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lVX-nR-R3n" firstAttribute="bottom" secondItem="3fg-Ip-0aA" secondAttribute="bottom" id="32q-tU-kCW"/>
+                        <constraint firstItem="3fg-Ip-0aA" firstAttribute="top" secondItem="5ej-Ge-8c6" secondAttribute="top" constant="8" id="49v-CF-NMK"/>
+                        <constraint firstItem="J0f-av-PX3" firstAttribute="top" secondItem="3fg-Ip-0aA" secondAttribute="bottom" constant="5" id="9dM-s7-6z5"/>
+                        <constraint firstItem="n2g-wy-qFB" firstAttribute="top" secondItem="5ej-Ge-8c6" secondAttribute="top" id="AsD-Lt-er0"/>
+                        <constraint firstItem="bOV-4e-56b" firstAttribute="top" secondItem="J0f-av-PX3" secondAttribute="top" id="EHO-Cl-eeo"/>
+                        <constraint firstAttribute="width" constant="100" id="Fkq-zo-cus"/>
+                        <constraint firstAttribute="bottom" secondItem="n2g-wy-qFB" secondAttribute="bottom" id="Hvd-mv-zNF"/>
+                        <constraint firstItem="3fg-Ip-0aA" firstAttribute="leading" secondItem="5ej-Ge-8c6" secondAttribute="leading" constant="8" id="ITO-as-t7q"/>
+                        <constraint firstItem="bOV-4e-56b" firstAttribute="leading" secondItem="J0f-av-PX3" secondAttribute="trailing" constant="8" symbolic="YES" id="KIc-I4-dLX"/>
+                        <constraint firstItem="J0f-av-PX3" firstAttribute="leading" secondItem="5ej-Ge-8c6" secondAttribute="leading" constant="8" id="VIS-vv-381"/>
+                        <constraint firstItem="n2g-wy-qFB" firstAttribute="leading" secondItem="5ej-Ge-8c6" secondAttribute="leading" id="Vob-SM-kYF"/>
+                        <constraint firstAttribute="trailing" secondItem="lVX-nR-R3n" secondAttribute="trailing" id="dkE-F1-LmB"/>
+                        <constraint firstItem="lVX-nR-R3n" firstAttribute="leading" secondItem="3fg-Ip-0aA" secondAttribute="trailing" constant="8" symbolic="YES" id="e3E-df-ZI9"/>
+                        <constraint firstAttribute="trailing" secondItem="bOV-4e-56b" secondAttribute="trailing" id="fhb-hg-Nqq"/>
+                        <constraint firstAttribute="trailing" secondItem="n2g-wy-qFB" secondAttribute="trailing" id="gZ4-oM-vIt"/>
+                        <constraint firstItem="bOV-4e-56b" firstAttribute="bottom" secondItem="J0f-av-PX3" secondAttribute="bottom" id="yXO-2z-OaD"/>
+                        <constraint firstItem="lVX-nR-R3n" firstAttribute="top" secondItem="3fg-Ip-0aA" secondAttribute="top" id="zJf-aV-FpS"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sas345" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rXE-pq-z9G" customClass="CustomLbl" customModule="FurEternity" customModuleProvider="target">
+                    <rect key="frame" x="37" y="59" width="121.5" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="AppFontNameBoldRegularMedium" value="R"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTs-aa-USS">
+                    <rect key="frame" x="0.0" y="101" width="414" height="1"/>
+                    <color key="backgroundColor" systemColor="separatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="l6W-T6-Y4Q"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="vtA-Dd-WPI" customClass="CustomUiimageView" customModule="FurEternity" customModuleProvider="target">
+                    <rect key="frame" x="168.5" y="44" width="77" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="bss-jJ-7ma"/>
+                        <constraint firstAttribute="width" constant="77" id="qS6-7t-goq"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="VTs-aa-USS" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="1HY-2n-S4C"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5ej-Ge-8c6" secondAttribute="bottom" id="Bo0-dV-4gk"/>
+                <constraint firstAttribute="bottom" secondItem="vtA-Dd-WPI" secondAttribute="bottom" id="GhE-0I-YaY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5ej-Ge-8c6" secondAttribute="trailing" constant="5" id="LaT-eK-h65"/>
+                <constraint firstItem="5ej-Ge-8c6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="PkX-y3-nFh"/>
+                <constraint firstItem="VTs-aa-USS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VHS-Hd-p8z"/>
+                <constraint firstAttribute="trailing" secondItem="VTs-aa-USS" secondAttribute="trailing" id="bqV-Lw-c5p"/>
+                <constraint firstItem="rXE-pq-z9G" firstAttribute="bottom" secondItem="1a1-jr-xdx" secondAttribute="bottom" id="cKd-uZ-Obv"/>
+                <constraint firstItem="1a1-jr-xdx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="gjH-at-OS3"/>
+                <constraint firstItem="rXE-pq-z9G" firstAttribute="top" secondItem="1a1-jr-xdx" secondAttribute="top" id="iJ0-tP-GKs"/>
+                <constraint firstItem="rXE-pq-z9G" firstAttribute="leading" secondItem="1a1-jr-xdx" secondAttribute="trailing" id="ks5-qq-y2S"/>
+                <constraint firstItem="1a1-jr-xdx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="rXS-gE-30b"/>
+                <constraint firstItem="vtA-Dd-WPI" firstAttribute="leading" secondItem="rXE-pq-z9G" secondAttribute="trailing" constant="10" id="tg3-6X-VHf"/>
+                <constraint firstItem="vtA-Dd-WPI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uyD-IK-bwr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-184.15178571428569"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="1a1-jr-xdx">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="3fg-Ip-0aA">
+            <size key="intrinsicContentSize" width="12.5" height="23"/>
+        </designable>
+        <designable name="J0f-av-PX3">
+            <size key="intrinsicContentSize" width="25.5" height="25.5"/>
+        </designable>
+        <designable name="bOV-4e-56b">
+            <size key="intrinsicContentSize" width="28" height="17"/>
+        </designable>
+        <designable name="lVX-nR-R3n">
+            <size key="intrinsicContentSize" width="32.5" height="17"/>
+        </designable>
+        <designable name="rXE-pq-z9G">
+            <size key="intrinsicContentSize" width="54" height="19.5"/>
+        </designable>
+        <designable name="vtA-Dd-WPI">
+            <size key="intrinsicContentSize" width="512" height="512"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Logo" width="512" height="512"/>
+        <image name="Money" width="12.5" height="23"/>
+        <image name="Profile" width="24" height="24"/>
+        <image name="Token" width="25.5" height="25.5"/>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
